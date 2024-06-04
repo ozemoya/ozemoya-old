@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'Pixel Operator Mono';
+    src: url('PixelOperatorMono.woff2') format('woff2'),
+        url('PixelOperatorMono.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+

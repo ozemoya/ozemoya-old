@@ -1,0 +1,426 @@
+* {
+  font-family:"PixelOperatorMono", 'VT323', monospace;
+  font-weight: normal;
+}
+
+.desktop-apps {
+  position: absolute;
+  top: 30px;
+  left: 0px;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: space-evenly;
+  font-size: 15px;
+  margin-bottom: 40px;
+  color: white;
+  margin-left: 30px;
+  height: auto;
+
+}
+
+.dapp p{
+  display: inline;
+  background: rgba(104, 76, 76, 0.4);
+  box-shadow: 6px 2px 3px rgba(239, 155, 60, 0.2);
+  font-family: "PixelOperatorMono";
+  margin-top: -10px;
+}
+
+
+.dapp {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+
+
+
+}
+
+.dapp img {
+  display: flex;
+  flex-direction: column;
+  width: 120px;
+}
+
+.desktop-apps img {
+  padding: 20px;
+
+}
+
+.desktop-apps div {
+  margin-bottom: 10px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: #d4a373;
+  font-family: 'MS Sans Serif', Geneva, sans-serif;
+  display: flex;
+  justify-content: flex-end;
+  height: 100px;
+  width: 300px;
+  margin-left: 400px;
+  padding: 300px;
+  background-image: url(images/ozemoyalogo.gif);
+  background-size: 80%; /* Adjust the value as per your requirement */
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: 200px 50px;
+  flex-shrink: 0;
+  
+}
+#myAlert {
+  position: fixed;
+  top: 40%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  transform: scale(1.4);
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+.window {
+
+  width: 30px;
+  background: #c0c0c0;
+  box-shadow: 5px 2px 10px 5px rgba(0, 0, 0, 0.2);
+  transform: rotate(20px);
+  transform: scale(1.5);
+  justify-content: flex-end;
+  flex-direction: column;
+  
+}
+.window {
+  display: none;
+}
+
+.loading-screen {
+  position: fixed;  /* Use fixed positioning */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(228, 113, 56); /* Semi-transparent black background */
+  z-index: 9999; /* Ensure it's above other content */
+  animation: fadeOut 8s ease-in-out forwards;
+  
+}
+
+
+.dot {
+  width: 20px;
+  height: 20px;
+  background-color: white; /* White dots for contrast */
+  border-radius: 50%;
+  margin: 0 5px;
+  animation: jump 1s infinite;
+}
+
+@keyframes jump {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-20px); }
+}
+
+#dot1 { animation-delay: 0s; }
+#dot2 { animation-delay: 0.2s; }
+#dot3 { animation-delay: 0.4s; }
+
+  
+.title-bar {
+  color: #ffffff;
+  padding: 5px;
+  position: relative;
+  height: 27px;
+  width: 200px;
+  z-index: 1; 
+  border: 1px solid black;
+  background-image: linear-gradient(#ECECEC, #c88040), url(images/papertexture.jpg);
+}
+
+.title-bar-text {
+  position:absolute;
+  top: 0px;
+  left: 5px;
+  margin: 0px;
+  display: inline-block;
+  padding: 2px 4px;
+  z-index: 2;
+  font-size: 13px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  color: black;
+  font-weight: bold;
+}
+
+#WindowClose {
+  bottom: 3px;
+  left: 0px;
+  background: none;
+  border: black;
+  box-shadow: px 2px 10px 5px rgba(0, 0, 0, 0.2);
+  color: #ffffff;
+  cursor: pointer;
+  display: flex;
+  transform: scale(1);
+  z-index: 3;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: flex-end;
+  
+  
+}
+/* #WindowClose:hover{ 
+  border:1px solid black;
+  box-shadow: px 2px 10px 5px rgba(0, 0, 0, 0.2);
+  padding: 2px;
+}
+*/
+.window-body {
+  padding: 0px;
+  margin: 0px;
+  width: 12.5em;
+  height: 100px;
+  background: #E1DEA9;
+  border: 1px solid black;
+  background-image: linear-gradient(#ECECEC, #d6d5b9), url(images/papertexture.jpg);
+  overflow: auto;
+}
+.window-body p{
+  font-size: 10px;
+  margin: 0px;
+}
+
+.taskbar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 50px;
+  background: #ECECEC;
+  display: flex;
+  align-items: center;
+  padding: 2px;
+  box-shadow: 0px -2px 5px rgba(0, 0, 0, 0.2);
+  color: #ffffff;
+  
+}
+
+#Time {
+  position: absolute;
+  right: 10px;
+  bottom: 0px;
+  font-size: 30px;
+  color: black;
+  display: flex;
+  flex-direction: row;
+  margin-right: 5px;
+  
+}
+
+#Date{
+  position: absolute;
+  right: 200px;
+  bottom: 0px;
+  font-size: 30px;
+  color: black;
+  display: flex;
+  flex-direction: row;
+  margin-right: 5px;
+
+}
+
+.start-button {
+  margin-left: 4px;
+  background: #c0c0c0;
+  border: 1px solid #000;
+  height: 40px;
+  width: 90px;
+  color: #000;
+  box-shadow: 5px 2px 10px 5px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  
+
+}
+
+.start-button img {
+  margin-right: 5px;
+  margin-bottom: 5px;
+  width:30px;
+  height: auto;
+  top: 20px;
+}
+.ticker-wrap {
+  width: 20%;        /* Set the width as needed */
+  overflow: hidden;   /* Hides anything outside this container */
+  position: relative;
+  height: 50px;       /* Adjust based on your design needs */
+  font-size: 20px; /* Optional: background color */
+  border: 1px solid #ccc; 
+  color: black;/* Optional: border around the ticker */
+  left: 40px;
+}
+
+#headline {
+  position: absolute;
+  white-space: nowrap;
+  transform: translateX(100%);
+  animation: slideleft 10s linear infinite;
+}
+
+@keyframes slideleft {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(-100%); /* Adjust this value based on the content width */
+  }
+}
+
+
+
+/*  
+.Start{
+  margin: 30px;
+padding: 30px;
+  display: flex;
+align-items: flex-start;
+justify-content: space-evenly;
+flex-direction: row;
+}
+
+.start-button:hover {
+  background-color: #969696;
+  transition: 1s;
+  transform: translateY(-0.25em);
+}
+
+.taskbar-buttons {
+  flex-grow: 2;
+  display: flex;
+}
+
+/* .taskbar-app {
+  display: flex;
+  align-items: center;
+  padding: 2px;
+  margin: 0 20px;
+  background: #c0c0c0;
+  color: #000;
+  border: 1px solid #000;
+  transition: 1s;
+
+} */
+/*  
+.taskbar-app:hover {
+  background-color: #969696;
+  transform: translateY(-0.25em);
+}
+
+.taskbar-app:active {
+  background-color: aquamarine;
+}
+*/
+
+.dapp1:hover,
+.dapp2:hover,
+.dapp3:hover,
+.dapp4:hover {
+  transform: translateY(-0.25em);
+  cursor: pointer;
+  background-color: #cdb6a0;
+  transition: background-color 0.5s, color 0.5s, padding 1s;
+  padding: 0.5em;
+  border-radius: 5px;
+}
+
+
+
+.dapp1:active,
+.dapp2:active,
+.dapp3:active,
+.dapp4:active {
+  background-color: rgb(255, 246, 182);
+  transition: all 0.5s ease;
+
+}
+
+.taskbar-app img {
+  width: 16px;
+  height: 16px;
+  margin-right: 2px;
+}
+
+.spotify-container {
+  display:none;
+  flex: 1;
+  justify-content: center;
+  flex-direction: column;
+}
+
+
+::first-letter {
+  font-size: 20px;
+}
+
+.window::first-letter {
+  font-size: 15px;
+}
+
+
+span::first-letter {
+  font-size: 20px;
+}
+
+::selection {
+  background-color: #FFD6A5;
+}
+/* .ticker-wrap ::first-letter {
+  font-size: 30px;
+} */
+/* #DateIcon img{
+  position: absolute;
+  width: px; */
+
+
+/* } */
+@font-face {
+  font-family: 'Pixel Operator Mono';
+  src: url('.experiment/real projects/fonts/PixelOperatorMono.woff2') format('woff2'),
+    url(' .experiment/real projects/fonts/PixelOperatorMono.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@keyframes fadeOut {
+  from {opacity: 1;}
+  to {opacity: 0;}
+}
+
+.alert {
+  animation-name: fadeOut;
+  animation-duration: 10s;
+  animation-fill-mode: forwards;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: flex-end;
+  left: 100%;
+}

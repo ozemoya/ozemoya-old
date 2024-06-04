@@ -1,0 +1,6 @@
+s=r0
+A= 1/2r^20
+v=rw
+y= asin(bx+c)+d
+phase shift: c/b
+period: 2pi/b

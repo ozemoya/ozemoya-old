@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script defer src="ozemoya.js"></script>
+    <meta charset="UTF-8">
+    <title>ozemoya</title>
+    <link rel="icon" href="images/caticont.png">
+    <link rel="stylesheet" href="ozemoya.css">
+  </head>
+  <body>
+    <section class="desktop-apps">
+      <div class="dapp dapp1">
+        <img src="images/Projects.png" alt="" />
+        <p class="text-black-50">Projects</p>
+      </div>
+      <div class="dapp dapp2">
+        <img src="images/Services.png" alt="" />
+        <p class="text-black-50">Services</p>
+      </div>
+      <div class="dapp dapp3" id="contacts">
+        <img src="images/Contacts.png" alt="" />
+        <p class="text-black-50">Contacts</p>
+      </div>
+      <div class="dapp dapp4" id="music">
+        <img src="images/Music.png" alt="" />
+        <p class="text-black-50">Music</p>
+      </div>
+      <div class="position-sticky bottom-0 start-0">
+        <div class="spotify-container position-sticky bottom-0 start-50">
+          <iframe src="https://open.spotify.com/embed/album/1AJtMVPbKTiw7OHOa9oVCx?utm_source=generator" width="300" height="100" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+        </div>
+      </div>
+    </section>
+    <div class="window">
+      <div class="title-bar">
+        <div class="title-bar-text">Contacts</div>
+        <button id="WindowClose" class="position-absolute top-0 end-0 row-md-0 p-0" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="window-body">
+        <p class="user-select-none">Email: myleskmiller@gmail.com</p>
+        <p class="user-select-none"><a href="https://www.linkedin.com/in/myles-miller-669516263/">Linkedin</a></p>
+        <p class="user-select-none">Phone number: 678-559-2304</p>
+      </div>
+    </div>
+    <span class="taskbar border-top">
+      <div class="Start">
+        <button class="start-button">
+          <img src="images/windowstart.png" alt="" />
+          <span>Start</span>
+        </button>
+      </div>
+      <div id="Date"></div>
+      <div id="Time"></div>
+      <div class="ticker-wrap">
+        <div id="headline" class="animated-headline"></div>
+      </div>
+    </span>
+    <div class="loading-screen">
+      <div class="dot" id="dot1"></div>
+      <div class="dot" id="dot2"></div>
+      <div class="dot" id="dot3"></div>
+      <span class="catdance position-absolute bottom-0 start-50 translate-middle-x">
+        <img src="images/catdancegif.gif" alt="">
+      </span>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
+  </body>
+</html>
